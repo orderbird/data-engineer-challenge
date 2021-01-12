@@ -1,5 +1,5 @@
 # data-tech-challenge
-Hey Data Scientist. Welcome. Your mission, should you choose to accept it is to analyse the following data and get back to us with the results.
+Hey Data Engineer. Welcome. Your mission, should you choose to accept it is to analyse the following data and get back to us with the results.
 
 ## The Data
 
@@ -19,23 +19,31 @@ where
 
 As you will see, the item names do not follow any conventions, could be misspelled or even abbreviated. 
   
-Your task is to create some statistics and figures for a report for a German beverage company called Jägermeister.
-To this end, we ask you to create a jupyter/IPython notebook in which you solve the tasks listed below. Popular tools for tackling such tasks are Pandas or pySpark. If you prefer another tool, please explain why. Finally, for a better understanding of your approaches and ideas, please comment your code.
+Your task is to create some aggregations for a report for a German beverage company.
+To this end, we ask you to create a jupyter/IPython notebook or python script in which you solve the tasks listed below. Popular tools for tackling such tasks are Pandas or pySpark. If you prefer another tool, please explain why. Finally, for a better understanding of your approaches and ideas, please comment your code.
 
 ## The Tasks:
 
-1. Extract a list of all distinct Jägermeister (JM) item names 
-2. What are the top 10 most ordered JM items in terms of
-   * item count? 
-   * turnover?
-3. Create a histogram illustrating the number of ordered JM items per hour. 
-4. For each venue find
+1. Read data dump
+2. What are the top 10 most ordered items in terms of item count?    
+3. For each venue find
  
-    4.1. the weekday on which the most JM items (in terms of item count) are ordered
+    3.1. the weekday on which the most items (in terms of item count) are ordered
      
-    4.2. the item name which is ordered the most in terms of turnover
+    3.2. the item name which is ordered the most in terms of turnover
     
-5. BONUS: Come up with an additional (potentially interesting) insight based on the given data. What else could you compare? What would be interesting to learn for Jägermeister?  
+4. docker: 
+  4.1 Create docker image with a running postgres and initialized with the data dump 
+  4.2 Implement 3.1 and 3.2 as SQL queries
+  
+5. Miro and ETL design
+Suppose you are asked to design an ETL process which daily delivers the aggregation to an industry partner as a csv-file.
+5.1 Please outline your design in the provided Miro-board.
+5.2 Make sure you can explain the reasoning behaind your design decisions.
+
+6. Linux
+Suppose you ran a backfilling process ...
+
 
 If you have any questions regarding these tasks, please just get in touch ( Tech-challenge@orderbird.com ) so we can clarify.
 
