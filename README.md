@@ -1,5 +1,5 @@
 # data-tech-challenge
-Hey Data Engineer. Welcome. Your mission, should you choose to accept it is to analyse the following data and get back to us with the results.
+Hey Data Engineer. Welcome. Your mission, should you choose to accept it, is to analyse the following data and get back to us with the results.
 
 ## The Data
 
@@ -13,45 +13,47 @@ You are given a sample data dump (csv-format) comprising of ordered items of var
 * invoice_id (string)
 
 where 
-* datetime_ordered denotes the timestamp when the item was ordered
+* datetime_ordered denotes the timestamp when the item was ordered (bought)
 * turnover (in EUR) is the price  
 * invoice_id is an UUID of the associated invoice
-
-As you will see, the item names do not follow any conventions, could be misspelled or even abbreviated. 
   
 Your task is to create some aggregations for a report for a German beverage company.
 To this end, we ask you to create a jupyter/IPython notebook or python script in which you solve the tasks listed below. Popular tools for tackling such tasks are Pandas or pySpark. If you prefer another tool, please explain why. Finally, for a better understanding of your approaches and ideas, please comment your code.
 
 ## The Tasks:
-
-1. Read data dump
-2. What are the top 10 most ordered items in terms of item count?    
+# python 
+1. Read data dump into a dataframe
+2. What are the top 10 most ordered (bought) items in terms of item count?    
 3. For each venue find
- 
-    3.1. the weekday on which the most items (in terms of item count) are ordered
-     
-    3.2. the item name which is ordered the most in terms of turnover
+  3.1. the weekday on which the most items (in terms of item count) are ordered
+  3.2. the item name which is ordered the most in terms of turnover
     
-4. docker: 
-  4.1 Create docker image with a running postgres and initialized with the data dump 
-  4.2 Implement 3.1 and 3.2 as SQL queries
+# docker 
+1. Create docker image 
+  1. for running a SQL database, e.g. postgres database
+	2. initialized with the data dump 
+2. Implement 3.1 and 3.2 in SQL
+3. Demonstrate 
+	1. how to start and access the docker image
+	2. how to run queries from the command line 
   
-5. Miro and ETL design
-Suppose you are asked to design an ETL process which daily delivers the aggregation to an industry partner as a csv-file.
-5.1 Please outline your design in the provided Miro-board.
-5.2 Make sure you can explain the reasoning behaind your design decisions.
+# ETL design
+Suppose you are asked to design an ETL process which daily delivers the aggregations to an industry partner as, e.g. a csv-file.
+1. Please outline your design in the provided Miro-board.
+2. We are very interested in your reasoning behind your design decisions. Please prepare yourself to explain them to us. 
 
-6. Linux
-Suppose you ran a backfilling process ...
+# linux
+Suppose a collegue of yours ran your python script for a bunch of days and stored stdout/stderr in a log-file, i.e *backfill_log.txt*. Unfortunetly, the script did not succeded for all days. Your task now is to
+1. Demonstrate how to extract the dates for which the script failed by means of linux command line tools 
+2. Compose an excecuteable .sh file consisting of all python commands for re-running the failed scripts where the usage of the script is as follows:
+	python aggregate.py --date=YYYYMMDD
 
-
+#
 If you have any questions regarding these tasks, please just get in touch ( Tech-challenge@orderbird.com ) so we can clarify.
 
-### Hint
-Regarding task no 1. : please do not aim for 100% accuracy here, since this can be a real time-sucker :-) . Start with a "good enough" solution first and describe future improvements without implementing these.
 
 ## And now what?
-Please send your jupyter/IPython notebook to Tech-challenge@orderbird.com and we will get back to you asap. 
+Please send your jupyter/IPython notebook or python script as well as your SQL-queries to Tech-challenge@orderbird.com and we will get back to you asap. 
 Please *do not* create a pull request or fork this repository as your solution should not be end up being public afterwards.
 
 Good luck and happy coding!
