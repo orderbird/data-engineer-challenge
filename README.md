@@ -49,11 +49,11 @@ Suppose a collegue of yours ran your python script for a bunch of days and store
 	python aggregate.py --date=YYYYMMDD
 
 #
-If you have any questions regarding these tasks, please just get in touch ( Tech-challenge@orderbird.com ) so we can clarify.
+If you have any questions regarding these tasks, please just get in touch ( data-tech-challenge@orderbird.com ) so we can clarify.
 
 
 ## And now what?
-Please send your jupyter/IPython notebook or python script as well as your SQL-queries to Tech-challenge@orderbird.com and we will get back to you asap. 
+Please send your jupyter/IPython notebook or python script as well as your SQL-queries to data-tech-challenge@orderbird.com and we will get back to you asap. 
 Please *do not* create a pull request or fork this repository as your solution should not be end up being public afterwards.
 
 Good luck and happy coding!
