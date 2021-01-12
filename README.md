@@ -1,5 +1,5 @@
 # data-tech-challenge
-Hey Data Engineer. Welcome. Your mission, should you choose to accept it, is to analyse the following data and get back to us with the results.
+Hey Data Engineer. Welcome. Your mission, should you choose to accept it, is to process the following data and get back to us with the results.
 
 ## The Data
 
@@ -25,8 +25,8 @@ To this end, we ask you to create a jupyter/IPython notebook or python script in
 1. Read data dump into a dataframe
 2. What are the top 10 most ordered (bought) items in terms of item count?    
 3. For each venue find
-  3.1. the weekday on which the most items (in terms of item count) are ordered
-  3.2. the item name which is ordered the most in terms of turnover
+   1. the weekday on which the most items (in terms of item count) are ordered
+   2. the item name which is ordered the most in terms of turnover
     
 # docker 
 1. Create docker image 
@@ -53,7 +53,7 @@ If you have any questions regarding these tasks, please just get in touch ( data
 
 
 ## And now what?
-Please send your jupyter/IPython notebook or python script as well as your SQL-queries to data-tech-challenge@orderbird.com and we will get back to you asap. 
+Please send your jupyter/IPython notebook or python script as well as your Dockerfile and SQL-queries to data-tech-challenge@orderbird.com and we will get back to you asap. 
 Please *do not* create a pull request or fork this repository as your solution should not be end up being public afterwards.
 
 Good luck and happy coding!
