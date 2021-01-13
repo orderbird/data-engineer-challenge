@@ -25,14 +25,14 @@ To this end, we ask you to create a jupyter/IPython notebook or python script in
 1. Read data dump into a dataframe
 2. What are the top 10 most ordered (bought) items in terms of item count?    
 3. For each venue find
-   1. the weekday on which the most items (in terms of item count) are ordered
-   2. the item name which is ordered the most in terms of turnover
+	1. the weekday on which the most items (in terms of item count) are ordered
+   	2. the item name which is ordered the most in terms of turnover
     
 # docker 
 1. Create docker image 
-  1. for running a SQL database, e.g. postgres database
+	1. for running a SQL database, e.g. postgres database
 	2. initialized with the data dump 
-2. Implement 3.1 and 3.2 in SQL
+2. Implement 3.i and 3.ii in SQL
 3. Demonstrate 
 	1. how to start and access the docker image
 	2. how to run queries from the command line 
