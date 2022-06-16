@@ -32,7 +32,7 @@ Technical requirements:
 
 Here comes the challenging part:
 
-* after successfully inserting the data then a second table holding aggregated total amounts per venue and per date is updated.
+* after successfully inserting the data then a second table holding aggregated total amounts per venue and per date of creation is updated.
 * suppose that the invoice table was huuuuuge. Can you think of a non brute-force approach to **efficiently** update that aggregation table?
 
 If you have any questions regarding these tasks, please just get in touch ( data-tech-challenge@orderbird.com ) so we can clarify.
